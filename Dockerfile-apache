@@ -1,0 +1,6 @@
+FROM abhigupta1207/abhishek-ubuntu
+MAINTAINER Abhishek Gupta <gupta.abhishek1207@gmail.com>
+
+RUN apt-get update
+RUN apt-get install -y apache2
+CMD [ "/usr/sbin/apache2ctl" , "-D" , "FOREGROUND" ]
